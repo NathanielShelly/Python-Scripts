@@ -1,0 +1,8 @@
+def convert_seconds(seconds):
+    years = seconds // 31536000
+    days = (seconds - years * 31536000)  // 86400
+    hours = (seconds - years * 31536000 - days * 86400) // 3600
+    minutes = (seconds - years * 31536000 - days * 86400 - hours * 3600) // 60
+    remaining_seconds = (seconds - years * 31536000 - days * 86400 - hours * 3600 - minutes * 60)
+    print ("Years: " + str(years) +" Days: " + str(days) + ", Hours: " + str(hours) + ", Minutes: " + str(minutes) + ", Seconds: " + str(remaining_seconds))
+
